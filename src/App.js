@@ -1,21 +1,16 @@
+// import Members from "./Members";
+import React from "react";
 import User from "./User";
-import Members from "./Members";
-function App() {
-    function getData()
-    {
-        alert("hello from app")
-    }
-  return(
-      <div className="App">
-        <center>
-            {/*<h1>Pass Function as props</h1>*/}
-            <User data={getData} />
-            <div>
-                <Members data={getData}/>
-            </div>
-        </center>
-      </div>
-  );
-}
 
+function App() {
+    const [name,setName]=React.useState("Vrushali")
+
+    return (
+        <div className="App">
+            <h1>Render Methods in React</h1>
+            <User />
+            {/*<button onClick={()=>setName("Makwana")}> Update Name</button>*/}
+        </div>
+    )
+}
 export default App;
