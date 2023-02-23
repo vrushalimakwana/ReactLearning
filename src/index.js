@@ -1,12 +1,13 @@
 import React from "react";
-import ReactDOM from 'react-dom';
-//import Form from "./Form";
-//import Profile from "./Profile";
-import Login from "./Login";
-
-ReactDOM.render(
-    //<Form/>,
-    //<Profile/>,
-    <Login/>,
+import App from "./App";
+import ReactDom from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import reportWebVitals from "./reportWebVitals";
+ReactDom.render(
+    <React.StrictMode>
+    <App />,
+    </React.StrictMode>,
     document.getElementById('root')
 );
+
+reportWebVitals();
