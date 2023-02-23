@@ -31,14 +31,14 @@ function App() {
     return (
         <div className="App">
             <center>
-            <h1>List With Bootstrap Table</h1>
+                <h1>List With Bootstrap Table</h1>
                 <Table variant="dark" striped>
                     <tbody>
                     <tr>
                         <td>S.N</td>
-                    <td>Name</td>
-                    <td>Email</td>
-                    <td>Address</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Address</td>
                     </tr>
 
                     {
@@ -52,11 +52,11 @@ function App() {
                                         <tbody>
                                         {
                                             item.address.map((data)=>
-                                            <tr>
-                                                <td>{data.Hn}</td>
-                                                <td>{data.city}</td>
-                                                <td>{data.country}</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>{data.Hn}</td>
+                                                    <td>{data.city}</td>
+                                                    <td>{data.country}</td>
+                                                </tr>
                                             )
                                         }
                                         </tbody>
