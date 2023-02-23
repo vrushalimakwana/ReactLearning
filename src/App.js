@@ -1,5 +1,5 @@
 import React from "react";
-import {Table} from "react-bootstrap";
+import {Table} from 'react-bootstrap'
 function App() {
     const users = [
         { name: 'Pina', email: 'pina@test.com', address: [
